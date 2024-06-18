@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins} from "next/font/google";
+import { Krona_One} from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800'],  
+  subsets: ['latin']
+});
+const kronaOne = Krona_One({
+  weight: ['400'],  
   subsets: ['latin']
 });
 
@@ -20,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
+    <html lang="pt-br">
+      <head>
+        <meta name="author" content="Leonardo"/>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
