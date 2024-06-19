@@ -1,4 +1,5 @@
 import './style.css';
+import ThemeSwitch from './components/ThemeSwitch';
 import Image from "next/image";
 import { Krona_One} from "next/font/google";
 
@@ -10,7 +11,7 @@ const kronaOne = Krona_One({
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="main-banner">
+      <section className="main-banner">
         <div className="main-top-bar padding-border-container">
           <div className="container flex items-center justify-between">
             <div className="menu-top-bar container flex justify-between">
@@ -21,7 +22,7 @@ export default function Home() {
               <a className="text-color-white menu-link" href="#">Cursos Livres</a>
               <a className="text-color-white menu-link" href="#">Bolsa de Estudo</a>
             </div>
-            <div className="button-dark-mode text-color-white"><button>dark</button></div>
+            <div className="button-dark-mode text-color-white"><button className='dark:text-foreground'><ThemeSwitch></ThemeSwitch></button></div>
          </div>
         </div>
         <div className="second-bar-menu padding-border-container">
@@ -63,14 +64,17 @@ export default function Home() {
             <p className='subtitle-banner'>Criando hoje o seu amanhã.</p>
           </div>
         </div>
-      </div>
-      <div className='tomorrow-today'>
+      </section>
+      <section className='tomorrow-today'>
         <div className='tomorrw-today-content padding-border-container'>
           <div className='container flex flex-col items-center'>
             <p className='title-tomorrow-today'>CRIANDO HOJE, O SEU AMANHÃ!</p>
           </div>
         </div>
-      </div>
+      </section>
+      <section className='perfect-for-you'>
+
+      </section>
     </main>
   );
 }
