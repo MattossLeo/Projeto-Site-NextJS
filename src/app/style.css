@@ -1,4 +1,74 @@
+/* Home Site Unica*/
+
 .padding-border-container{
-    padding-left: 210px !important;
-    padding-right: 210px !important;
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+}
+.main-banner{
+    background: url('../assets/banner-img.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-top-bar{
+    background: rgba(0,0,0,70%);
+    padding: 15px;
+}
+.text-color-white{
+    color: white;
+}
+.menu-link{
+    font-size: 15px;
+    padding-right: 15px;
+}
+.initial-pd{
+    padding-left: 15px;
+}
+.second-bar-menu {
+    padding: 25px;
+    background: rgba(73, 73, 73, 40%);
+}
+.search-bar {
+    width: 425px;
+    position: relative;
+}
+.input-search {
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 35px;
+}
+.magnifying-glass {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.student-button > button {
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.banners-title {
+    display: flex;
+    flex-direction: column;
+    padding: 250px 0 70px;
+}
+.title-banner-> h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+.subtitle-banner{
+    color: white;
+    font-size: 22px;
+}
+.tomorrow-today{
+    background: url('../assets/tomorrow-today-img.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.title-tomorrow-today{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
