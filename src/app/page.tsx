@@ -36,7 +36,7 @@ export default function Home() {
             />
             </div>
             <div className="search-bar">
-              <input className="input-search p-3" type="search" placeholder="Pesquise por um curso" />
+              <input className="input-search p-3 bg-zinc-100 dark:bg-zinc-100" type="search" placeholder="Pesquise por um curso" />
               <div className='magnifying-glass'>
               <Image
               className='magnifying-glass-img'
@@ -72,8 +72,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='perfect-for-you'>
-
+      <section className='perfect-for-you bg-zinc-100 dark:bg-black'>
+        <div className='main-perfect-for-you padding-border-container'>
+          <div className='titles-content flex flex-col items-center justify-center'>
+            <h2 className="title-for-you text-black dark:text-zinc-100">Perfeita para você!</h2>
+            <p className='history-for-you  text-black dark:text-zinc-100'>Há mais de 22 anos, a Faculdade Única transforma vidas por meio da educação. Com base na ética e na responsabilidade social, com um preço justo e acessível, utilizamos a tecnologia e a inovação para ampliar as possibilidades de ensino de milhares de alunos espalhados por todo o país.</p>
+          </div>
+        </div>
       </section>
     </main>
   );
