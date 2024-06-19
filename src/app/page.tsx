@@ -65,8 +65,10 @@ export default function Home() {
         </div>
       </div>
       <div className='tomorrow-today'>
-        <div className='padding-border-container container flex flex-col items-center'>
-          <p className='title-tomorrow-today'>CRIANDO HOJE, O SEU AMANHÃ!</p>
+        <div className='tomorrw-today-content padding-border-container'>
+          <div className='container flex flex-col items-center'>
+            <p className='title-tomorrow-today'>CRIANDO HOJE, O SEU AMANHÃ!</p>
+          </div>
         </div>
       </div>
     </main>
