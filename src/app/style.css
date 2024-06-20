@@ -1,9 +1,6 @@
 /* Home Site Unica*/
 
-.padding-border-container{
-    padding-left: 200px !important;
-    padding-right: 200px !important;
-}
+
 .main-banner{
     background: url('../assets/banner-img.webp');
     background-size: cover;
@@ -12,6 +9,9 @@
 .main-top-bar{
     background: rgba(0,0,0,70%);
     padding: 15px;
+}
+.menu-mob, .logo-mob, .click-arrow, .click-buger, .second-menu-mob{
+    display: none;
 }
 .text-color-white{
     color: white;
@@ -107,4 +107,62 @@ p.history-for-you {
     font-size: 28px;
     font-weight: 700;
     margin-top: 30px;
+}
+
+.padding-border-container{
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+@media only screen and (max-width: 991px) {
+    .menu-link{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .padding-border-container{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .menu-desk, .logo-desk{
+        display: none;
+    }
+    
+    .logo-mob, .click-arrow, .click-buger{
+        display: block;
+    }
+    .click-arrow, .click-buger{
+        position: relative;
+    }
+    .click-arrow:hover> .menu-mob {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        min-width: 225px;
+        z-index: 999;
+        padding: 10px;
+        border-radius: 5px;
+        top: 25px;
+    }
+    .menu-mob > a{
+        font-size: 16px;
+    }
+    .click-buger:hover > .second-menu-mob{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        min-width: 225px;
+        z-index: 999;
+        padding: 10px;
+        border-radius: 5px;
+        top: 25px;
+    }
+    .second-menu-mob > a{
+        font-size: 16px;
+    }
+    .main-content-cards {
+        flex-direction: column;
+    }
+    .main-cards-for-you {
+        margin-bottom: 20px;
+    }
 }

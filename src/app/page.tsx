@@ -13,8 +13,8 @@ export default function Home() {
     <main className="min-h-screen">
       <section className="main-banner">
         <div className="main-top-bar padding-border-container">
-          <div className="container flex items-center justify-between">
-            <div className="menu-top-bar container flex justify-between">
+          <div className="flex items-center justify-between">
+            <div className="menu-desk menu-top-bar flex justify-between">
               <a className="text-color-white menu-link" href="#">Graduação</a>
               <a className="text-color-white menu-link" href="#">Segunda Graduação</a>
               <a className="text-color-white menu-link" href="#">Pós Graduação</a>
@@ -22,18 +22,58 @@ export default function Home() {
               <a className="text-color-white menu-link" href="#">Cursos Livres</a>
               <a className="text-color-white menu-link" href="#">Bolsa de Estudo</a>
             </div>
-            <div className="button-dark-mode text-color-white"><button className='dark:text-foreground'><ThemeSwitch></ThemeSwitch></button></div>
-         </div>
-        </div>
-        <div className="second-bar-menu padding-border-container">
-          <div className="container flex items-center justify-between">
-            <div className="main-logo">
+            <div className='menu-mobile'>
+              <div className='click-arrow'>
+                <Image
+                src="/white-arrow.svg"
+                alt="Logotipo"
+                width={20} 
+                height={20}
+                />
+                <div className='menu-mob menu-top-mob flex bg-zinc-100 dark:bg-black text-black dark:text-zinc-100'>
+                  <a className="text-color-white menu-link" href="#">Graduação</a>
+                  <a className="text-color-white menu-link" href="#">Segunda Graduação</a>
+                  <a className="text-color-white menu-link" href="#">Pós Graduação</a>
+                  <a className="text-color-white menu-link" href="#">Disciplinas Isoladas</a>
+                  <a className="text-color-white menu-link" href="#">Cursos Livres</a>
+                  <a className="text-color-white menu-link" href="#">Bolsa de Estudo</a>
+                </div>
+              </div>
+            </div>
+            <div className="main-logo logo-mob">
             <Image
               src="/logo-unica.svg"
               alt="Logotipo"
               width={150} 
               height={150}
             />
+            </div>
+            <div className="button-dark-mode text-color-white"><button className='dark:text-foreground'><ThemeSwitch></ThemeSwitch></button></div>
+         </div>
+        </div>
+        <div className=" second-bar-menu padding-border-container">
+          <div className="flex items-center justify-between">
+            <div className="main-logo logo-desk">
+            <Image
+              src="/logo-unica.svg"
+              alt="Logotipo"
+              width={150} 
+              height={150}
+            />
+            </div>
+            <div className='click-buger'>
+            <Image
+                src="/buger-menu.svg"
+                alt="Logotipo"
+                width={40} 
+                height={40}
+                />
+                <div className="second-menu-mob flex bg-zinc-100 dark:bg-black text-black dark:text-zinc-100">
+                  <a className="text-color-white menu-link" href="#">Nossas Áreas</a>
+                  <a className="text-color-white menu-link" href="#">Vidas Transformadas</a>
+                  <a className="text-color-white menu-link" href="#">Blog</a>
+                  <a className="text-color-white menu-link" href="#">FAQ</a>
+                </div>
             </div>
             <div className="search-bar">
               <input className="input-search p-3 bg-zinc-100 dark:bg-zinc-100" type="search" placeholder="Pesquise por um curso" />
@@ -47,19 +87,19 @@ export default function Home() {
             />
               </div>
             </div>
-            <div className="second-menu">
+            <div className="second-menu menu-desk">
               <a className="text-color-white initial-pd menu-link" href="#">Nossas Áreas</a>
               <a className="text-color-white menu-link" href="#">Vidas Transformadas</a>
               <a className="text-color-white menu-link" href="#">Blog</a>
               <a className="text-color-white menu-link" href="#">FAQ</a>
             </div>
-            <div className="student-button">
+            <div className="student-button menu-desk">
               <button className={kronaOne.className}>JÁ SOU ALUNO</button>
             </div>
           </div>
         </div>
         <div className="banners-title padding-border-container">
-          <div className="title-banner- container flex flex-col p-14">
+          <div className="title-banner- flex flex-col">
             <h1 className={kronaOne.className}>CONHEÇA A <br/>FACULDADE ÚNICA</h1>
             <p className='subtitle-banner'>Criando hoje o seu amanhã.</p>
           </div>
@@ -67,7 +107,7 @@ export default function Home() {
       </section>
       <section className='tomorrow-today'>
         <div className='tomorrw-today-content padding-border-container'>
-          <div className='container flex flex-col items-center'>
+          <div className='flex flex-col items-center'>
             <p className='title-tomorrow-today'>CRIANDO HOJE, O SEU AMANHÃ!</p>
           </div>
         </div>
