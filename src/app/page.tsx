@@ -76,8 +76,50 @@ export default function Home() {
         <div className='main-perfect-for-you padding-border-container'>
           <div className='titles-content flex flex-col items-center justify-center'>
             <h2 className="title-for-you text-black dark:text-zinc-100">Perfeita para você!</h2>
-            <p className='history-for-you  text-black dark:text-zinc-100'>Há mais de 22 anos, a Faculdade Única transforma vidas por meio da educação. Com base na ética e na responsabilidade social, com um preço justo e acessível, utilizamos a tecnologia e a inovação para ampliar as possibilidades de ensino de milhares de alunos espalhados por todo o país.</p>
           </div>
+          <div className='history-for-you-main'>
+          <p className='history-for-you text-black dark:text-zinc-100'>Há mais de 22 anos, a Faculdade Única transforma vidas por meio da educação. Com base na ética e na responsabilidade social, com um preço justo e acessível, utilizamos a tecnologia e a inovação para ampliar as possibilidades de ensino de milhares de alunos espalhados por todo o país.</p>
+          </div>
+          <div className='main-content-cards flex items-center justify-between'>
+          <div className='main-cards-for-you'>
+            <div className="card-for-you bg-zinc-100 dark:bg-black text-black dark:text-zinc-100">
+            <Image
+              className='certifier-img'
+              src="/certifier-img.svg"
+              alt="Logotipo"
+              width={60} 
+              height={60}
+            />
+            <p className='text-card-history-for-you'>+ de 489 mil Alunos <br/>certificados</p>
+            </div>
+          </div> 
+          <div className='main-cards-for-you'>
+            <div className="card-for-you bg-zinc-100 dark:bg-black text-black dark:text-zinc-100">
+            <Image
+              className='map-img'
+              src="/map-img.svg"
+              alt="Logotipo"
+              width={60} 
+              height={60}
+            />
+            <p className='text-card-history-for-you'>+ de 250 Polos em <br/>todo Brasil</p>
+            </div>
+          </div> 
+          <div className='main-cards-for-you'>
+            <div className="card-for-you bg-zinc-100 dark:bg-black text-black dark:text-zinc-100">
+            <Image
+              className='pc-img'
+              src="/pc-img.svg"
+              alt="Logotipo"
+              width={60} 
+              height={60}
+            />
+            <p className='text-card-history-for-you'>+ de 900 cursos em <br/>diversas modalidades <br/>de ensino</p>
+            </div>
+          </div>  
+          </div>
+             
+
         </div>
       </section>
     </main>
