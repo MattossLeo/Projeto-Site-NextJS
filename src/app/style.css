@@ -72,6 +72,39 @@
     font-size: 1.3rem;
     font-weight: 500;
 }
+section.perfect-for-you {
+    padding: 80px 0;
+}
 .title-for-you {
-    font-size: 22px;
+    font-size: 26px;
+    font-family: '__Krona_One_0c2f2c';
+}
+.history-for-you-main{
+    padding-top: 25px;
+}
+p.history-for-you {
+    font-size: 18px;
+    text-align: center;
+}
+.main-content-cards {
+    display: flex;
+    margin-top: 50px;
+}
+.main-cards-for-you{
+    background: linear-gradient(270deg, #2bf79100, #a68bff);
+    padding: 1px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 260px;
+}
+.card-for-you{
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 260px;
+}
+.text-card-history-for-you {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
 }
