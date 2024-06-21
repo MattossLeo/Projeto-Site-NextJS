@@ -5,13 +5,6 @@ import { Krona_One} from "next/font/google";
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-import enterprise from '../..public/enterprise.webp';
-import courses from '../..public/courses.webp';
-import stages from '../..public/stages.webp';
-import teachers from '../..public/teachers.webp';
-
-const slide: any[] =[courses, enterprise, stages, teachers]
-
 const kronaOne = Krona_One({
   weight: ['400'],  
   subsets: ['latin']
