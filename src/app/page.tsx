@@ -2,6 +2,8 @@ import './style.css';
 import ThemeSwitch from './components/ThemeSwitch';
 import Image from "next/image";
 import { Krona_One} from "next/font/google";
+import React from 'react';
+import { useEffect, useState } from 'react';
 
 const kronaOne = Krona_One({
   weight: ['400'],  
@@ -9,6 +11,7 @@ const kronaOne = Krona_One({
 });
       
 export default function Home() {
+
   return (
     <main className="min-h-screen">
       <section className="main-banner">
@@ -160,6 +163,35 @@ export default function Home() {
           </div>
              
 
+        </div>
+      </section>
+      <section className='build-tomorrow bg-zinc-100 dark:bg-black'>
+        <div className='main-build-tomorrow padding-border-container flex justify-between'>
+          <div className="main-content-build">
+            <div className='main-title-build'>
+              <h2 className='title-build-tomorrow text-black dark:text-zinc-100'>Construa seu amanhã <br/>conosco</h2>
+            </div>
+            <div className='main-text-build'>
+              <p className='text-build text-black dark:text-zinc-100'>Com foco em inovação e qualidade, seja nos cursos <br/>presenciais ou online, utilizamos as mais modernas <br/>tecnologias para uma comunicação mais eficiente <br/>e eficaz entre professor e aluno, destinados à <br/>formação de profissionais qualificados, capazes de <br/>transformar a realidade socioeconômica do país.</p>
+            </div>
+          </div>
+          <div className='main-img-build'>
+            <Image
+                src="/buid-tomorrow-img.webp"
+                alt="Logotipo"
+                width={582} 
+                height={330}
+             />
+          </div>
+        </div>
+      </section>
+      <section className='open-doors bg-zinc-100 dark:bg-black'>
+        <div className="open-doors-containers padding-border-container">
+          <div className="open-doors-titles">
+            <h2 className='title-open-doors text-black dark:text-zinc-100'>Abra novas portas para o seu futuro</h2>
+          </div>
+          <div className="slick-open-doors">
+          </div>
         </div>
       </section>
     </main>
